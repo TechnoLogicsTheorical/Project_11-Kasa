@@ -1,0 +1,19 @@
+.Header {
+    height: 68px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-Link {
+    font-size: var(--small-size);
+    text-decoration: none;
+    color: var(--main-color);
+    margin-left: 54px;
+}
+
+.Header-Link.Active,
+.Header-Link:hover {
+    text-decoration: underline;
+}
