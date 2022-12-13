@@ -1,0 +1,17 @@
+.Card {
+    height: 340px;
+    width: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), #FF6060;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Card-Title {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px;
+}
