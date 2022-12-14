@@ -4,6 +4,7 @@ import React from 'react';
 import Header from '../components/Header/comp.jsx';
 import Banner from '../components/Banner/comp.jsx';
 import CardList from "../components/CardList/CardList.jsx";
+import Footer from "../components/Footer/comp.jsx";
 
 
 function Home(props) {
@@ -17,6 +18,8 @@ function Home(props) {
             </Banner>
 
             <CardList />
+
+            <Footer />
         </div>
     );
 }

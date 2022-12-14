@@ -27,7 +27,7 @@ code {
 }
 
 .App-Content {
-    margin: 40px 100px;
+    margin: 40px 100px 0 100px;
 }
 
 .Error-Reason-Content {

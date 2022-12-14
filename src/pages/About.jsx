@@ -3,8 +3,9 @@ import Header from "../components/Header/comp.jsx";
 import Banner from "../components/Banner/comp.jsx";
 import BannerImage from '../assets/BannerAbout.png';
 import Detail from "../components/Detail/comp.jsx";
+import Footer from "../components/Footer/comp.jsx";
 
-function About(props) {
+function About() {
     return (
         <div className='App-Content'>
             <Header />
@@ -30,6 +31,8 @@ function About(props) {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, deleniti fuga iste labore mollitia quae ratione rem sunt voluptas voluptatibus!
                 </Detail>
             </div>
+
+            <Footer />
         </div>
     );
 }
