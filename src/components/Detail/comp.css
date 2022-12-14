@@ -1,0 +1,52 @@
+.Details-Container {
+    margin-top: 30px;
+}
+
+.Detail-Card {
+    padding: 7px 18px;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+
+    position: relative;
+
+    margin-bottom: 30px;
+}
+
+/* Enleve le chevron de base crée par le navigateur */
+.Detail-Card-Title {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Detail-Card-Title::-webkit-details-marker {
+    display:none;
+}
+
+.Detail-Card-Icon {
+    transition: transform .6s ease-in-out;
+}
+
+.Detail-Card[open] .Detail-Card-Icon {
+    transform: rotate(180deg);
+}
+
+.Detail-Card-Content {
+    background-color: #F6F6F6;
+    color: var(--main-color);
+
+    padding: 36px 18px;
+
+    font-weight: 300;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    z-index: -1;
+}

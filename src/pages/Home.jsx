@@ -2,7 +2,7 @@ import BannerImage from '../assets/BannerHome.png';
 
 import React from 'react';
 import Header from '../components/Header/comp.jsx';
-import Banner from '../components/Banner/comp.js';
+import Banner from '../components/Banner/comp.jsx';
 import CardList from "../components/CardList/CardList.jsx";
 
 
