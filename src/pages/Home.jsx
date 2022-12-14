@@ -7,7 +7,7 @@ import CardList from "../components/CardList/CardList.jsx";
 import Footer from "../components/Footer/comp.jsx";
 
 
-function Home(props) {
+function Home() {
     return (
         <div className='App-Content'>
             <Header />

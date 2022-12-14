@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Header from "../components/Header/comp.jsx";
 
-function PageNotFound(props) {
+function PageNotFound() {
     return (
         <div className='App-Content'>
             <Header />

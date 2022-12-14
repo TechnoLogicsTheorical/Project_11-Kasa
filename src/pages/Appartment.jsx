@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Appartment(props) {
+function Appartment() {
     return (
         <div>
             im the home !
