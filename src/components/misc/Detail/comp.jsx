@@ -1,10 +1,10 @@
 import './comp.css'
-import Chevron from '../../assets/Chevron.png';
-import React from 'react';
+import Chevron from '../../../assets/Chevron.png';
+import React, {useState} from 'react';
 
-function Detail({title, children}) {
+function Detail({title, children, defaultOpen = false}) {
     return (
-        <details className='Detail-Card'>
+        <details className='Detail-Card' open={defaultOpen}>
             <summary className='Detail-Card-Title'>
                 {title}
                 <img className='Detail-Card-Icon' src={Chevron} alt="Icone pour définir l'état d'ouverture" />

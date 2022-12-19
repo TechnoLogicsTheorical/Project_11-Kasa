@@ -12,8 +12,6 @@
     background-color: var(--main-color);
     border-radius: 5px;
 
-    position: relative;
-
     margin-bottom: 30px;
 }
 
@@ -39,14 +37,9 @@
 .Detail-Card-Content {
     background-color: #F6F6F6;
     color: var(--main-color);
-
-    padding: 36px 18px;
-
     font-weight: 300;
 
-    position: absolute;
-    left: 0;
-    right: 0;
-
-    z-index: -1;
+    padding: 36px 18px 18px;
+    margin: 9px -18px -7px;
+    border-radius: 5px
 }
