@@ -1,6 +1,5 @@
 import './comp.css'
 
-
 function Banner(props) {
     return (
         <div className={'Banner '
