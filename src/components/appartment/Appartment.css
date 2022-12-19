@@ -5,3 +5,25 @@
     color: var(--main-color);
     margin-top: 30px;
 }
+
+.Appartment-Extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Appartment-Extra .Tags-Container {
+    margin-top: 20px;
+}
+
+.Appartment-Details {
+    margin-top: 24px;
+    display: flex;
+    gap: 76px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.Appartment-Details .Detail-Card {
+    width: 50%;
+    height: max-content;
+}

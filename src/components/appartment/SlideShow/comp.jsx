@@ -1,7 +1,8 @@
 import './comp.css';
 import React from "react";
 
-function SlideShow() {
+function SlideShow({datasPictures}) {
+
 
     return (
         <div className='SlideShow-Container'>

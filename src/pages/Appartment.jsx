@@ -3,12 +3,13 @@ import '../components/appartment/Appartment.css'
 import Header from '../components/generics/Header/comp.jsx';
 import Footer from '../components/generics/Footer/comp.jsx';
 
+import Detail from '../components/misc/Detail/comp.jsx';
+import RatingScore from '../components/appartment/RatingScore/comp.jsx';
 import SlideShow from '../components/appartment/SlideShow/comp.jsx';
 import Title from '../components/appartment/Title/comp.jsx';
 import Profil from '../components/appartment/Profil/comp.jsx';
 import Tag from '../components/appartment/Tag/comp.jsx';
-import {useParams} from "react-router-dom";
-import {logDOM} from "@testing-library/react";
+import { useParams } from "react-router-dom";
 
 function Appartment() {
     const { id } = useParams();
@@ -46,10 +47,28 @@ function Appartment() {
 
             <div className="Appartment-Extra">
                 <div className='Tags-Container'>
-                    {datas && datas.tags.map( tag => <Tag text={tag} />)}
+                    {datas && datas.tags.map( tag => <Tag key={tag} text={tag} />)}
                 </div>
 
-                {/*RatingScore score=3*/}
+                <RatingScore score={datas && datas.rating} />
+            </div>
+
+            <div className="Appartment-Details">
+                <Detail
+                    title='Description'
+                    defaultOpen={true}
+                >
+                    <p>{datas && datas.description}</p>
+                </Detail>
+
+                <Detail
+                    title='Equipements'
+                    defaultOpen={true}
+                >
+                    <ul>
+                        {datas && datas.equipments.map( equipment => (<li key={equipment}>{equipment}</li>))}
+                    </ul>
+                </Detail>
             </div>
 
             <Footer />
