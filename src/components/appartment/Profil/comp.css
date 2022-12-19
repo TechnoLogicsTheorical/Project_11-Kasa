@@ -1,0 +1,19 @@
+.Profil-Container {
+    display: flex;
+    align-items: center;
+}
+
+.Profil-Name {
+    font-size: 18px;
+    width: 93px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.Profil-Avatar {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}

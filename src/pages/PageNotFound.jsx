@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Header from "../components/Header/comp.jsx";
+import Header from "../components/generics/Header/comp.jsx";
 
 function PageNotFound() {
     return (

@@ -1,0 +1,16 @@
+.Tag {
+    background-color: var(--main-color);
+    min-width: 115px;
+    border-radius: 25px;
+    height: 25px;
+    color:white;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    display: inline-block;
+    margin-right: 10px;
+
+    text-align: center;
+    padding: 3px;
+}

@@ -1,0 +1,7 @@
+.Appartment-Header {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--main-color);
+    margin-top: 30px;
+}
