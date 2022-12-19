@@ -1,5 +1,5 @@
 import './comp.css';
-import LogoWhite from '../../assets/LogoWhite.png';
+import LogoWhite from '../../../assets/LogoWhite.png';
 import React from 'react';
 
 function Footer() {

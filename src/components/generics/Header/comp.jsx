@@ -1,9 +1,9 @@
-import logo from '../../assets/logo.png';
+import logo from '../../../assets/logo.png';
 import './comp.css';
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-function Header(props) {
+function Header() {
     return (
         <header className='Header'>
             <NavLink to="/">
