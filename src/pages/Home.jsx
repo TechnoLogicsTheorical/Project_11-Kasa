@@ -1,10 +1,10 @@
 import BannerImage from '../assets/BannerHome.png';
 
 import React from 'react';
-import Header from '../components/Header/comp.jsx';
-import Banner from '../components/Banner/comp.jsx';
-import CardList from "../components/CardList/CardList.jsx";
-import Footer from "../components/Footer/comp.jsx";
+import Header from '../components/generics/Header/comp.jsx';
+import Banner from '../components/misc/Banner/comp.jsx';
+import CardList from "../components/misc/CardList/CardList.jsx";
+import Footer from "../components/generics/Footer/comp.jsx";
 
 
 function Home() {
