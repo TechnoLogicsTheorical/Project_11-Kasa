@@ -9,35 +9,32 @@ function SlideShow({datasPictures}) {
     const slidesImages = document.querySelectorAll('.SlideShow-Image');
     const bulletsIndication = document.querySelectorAll('.Bullet');
 
-    const slidesNumber = slidesImages.length;
+    const totalNumberSlides = slidesImages.length - 1;
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const showSlideNext = () => {
-        console.log(currentSlide)
-        slidesImages[currentSlide].classList.remove('active');
-        bulletsIndication[currentSlide].classList.remove('active');
-        if (currentSlide < slidesNumber - 1) {
-            setCurrentSlide(currentSlide + 1)
-        } else {
-            setCurrentSlide(0);
-        }
+        const actualSlide = currentSlide;
+        const nextSlide = (actualSlide < totalNumberSlides) ? (actualSlide + 1) : (0) ;
+        setCurrentSlide(nextSlide);
 
-        slidesImages[currentSlide].classList.add('active');
-        bulletsIndication[currentSlide].classList.add('active');
+        slidesImages[actualSlide].className = 'SlideShow-Image';
+        bulletsIndication[actualSlide].className = 'Bullet';
+
+        slidesImages[nextSlide].className = 'SlideShow-Image active';
+        bulletsIndication[nextSlide].className = 'Bullet active';
     }
 
     const showSlidePrev = () => {
-        slidesImages[currentSlide].classList.remove('active');
-        bulletsIndication[currentSlide].classList.remove('active');
-        if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 1)
-        } else {
-            setCurrentSlide(slidesNumber - 1);
-        }
+        const actualSlide = currentSlide;
+        const nextSlide = (actualSlide > 0) ? (actualSlide - 1) : (totalNumberSlides) ;
+        setCurrentSlide(nextSlide)
 
-        slidesImages[currentSlide].classList.add('active');
-        bulletsIndication[currentSlide].classList.add('active');
+        slidesImages[actualSlide].className = 'SlideShow-Image';
+        bulletsIndication[actualSlide].className = 'Bullet';
+
+        slidesImages[nextSlide].className = 'SlideShow-Image active';
+        bulletsIndication[nextSlide].className = 'Bullet active';
     }
 
     return (
