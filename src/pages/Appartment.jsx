@@ -9,24 +9,30 @@ import SlideShow from '../components/appartment/SlideShow/comp.jsx';
 import Title from '../components/appartment/Title/comp.jsx';
 import Profil from '../components/appartment/Profil/comp.jsx';
 import Tag from '../components/appartment/Tag/comp.jsx';
-import { useParams } from "react-router-dom";
+
+import { useParams, useNavigate } from "react-router-dom";
 
 function Appartment() {
     const { id } = useParams();
+    const navigate = useNavigate();
 
     const [datas, setDatas] = useState(null);
 
+    async function getData(idData){
+        let fetchedData = await fetch('/data.json');
+        fetchedData = await fetchedData.json();
+
+        return fetchedData.find(data => data.id === idData);
+    }
+
     useEffect(() => {
-        fetch('/data.json')
-            .then(
-                res => res.json()
-            )
-            .then(
-                (res) => {
-                    const dataWithID = res.find(dataItem => dataItem.id === id)
-                    setDatas(dataWithID);
-                }
-            )
+        async function fetchData() {
+            const data = await getData(id);
+            if (data) {
+                setDatas(data);
+            } else navigate('/error');
+        }
+        fetchData();
     },[]);
 
     return (
