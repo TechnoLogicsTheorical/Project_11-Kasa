@@ -29,8 +29,6 @@ function Appartment() {
             )
     },[]);
 
-        console.log(datas)
-
     return (
         <div className='App-Content'>
             <Header />
