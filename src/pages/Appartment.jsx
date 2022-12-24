@@ -70,7 +70,7 @@ function Appartment() {
                     defaultOpen={true}
                 >
                     <ul>
-                        {datas && datas.equipments.map( equipment => (<li key={equipment}>{equipment}</li>))}
+                        {datas && datas.equipments.map( equipment => (<li className='List-Item' key={equipment}>{equipment}</li>))}
                     </ul>
                 </Detail>
             </div>

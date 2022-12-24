@@ -43,3 +43,16 @@
     margin: 9px -18px -7px;
     border-radius: 5px
 }
+
+.Detail-Card-Content > * {
+    margin: 0;
+    padding: 0;
+
+    /* Force to apply children block and accept size dimension with width and height, if is settled ...*/
+    display: inline-block;
+}
+
+.List-Item {
+    margin-bottom: 10px;
+    display: block;
+}
