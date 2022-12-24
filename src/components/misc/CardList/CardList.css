@@ -1,14 +1,14 @@
 .Card-List-Container {
     background-color: #F6F6F6;
     border-radius: 25px;
-    margin-top: 43px;
-    min-height: 300px;
+    margin: 45px auto 50px auto;
+    padding: 50px;
 
+    min-height: 300px;
     display: flex;
     flex-wrap: wrap;
     flex: none;
     flex-shrink: 0;
     flex-grow: 0;
     gap: 50px 60px;
-    padding: 50px;
 }
