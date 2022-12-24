@@ -1,13 +1,37 @@
 .Title-Container {
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
-.Title-Lvl1 {
-    font-size: 36px;
+.Title,
+.Sub-Title {
+    font-weight: inherit;
+}
+
+.Title {
+    font-size: var(--medium-size);
     margin: 0;
 }
 
-.Title-Lvl2 {
-    font-size: 18px;
+.Sub-Title {
+    font-size: var(--x-small-size);
     margin: 0;
+}
+
+@media screen and (max-width: 1120px) {
+    .Title {
+        font-size: 26px;
+    }
+    .Sub-Title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Title {
+        font-size: var(--x-small-size);
+    }
+    .Sub-Title {
+        font-size: 14px;
+    }
 }

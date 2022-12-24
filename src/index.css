@@ -16,7 +16,8 @@ body {
     --high-size: 48px;
     --medium-size: 36px;
     --small-size: 24px;
-    --x-small-size: 12px;
+    --x-small-size: 18px;
+    --xs-small-size: 12px;
 }
 
 .App-Content {
@@ -75,6 +76,6 @@ body {
         font-size: 18px;
     }
     .Error-Link {
-        font-size: var(--x-small-size);
+        font-size: var(--xs-small-size);
     }
 }

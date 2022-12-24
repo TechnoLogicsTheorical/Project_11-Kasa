@@ -28,7 +28,7 @@
         margin-bottom: 25px;
     }
     .Footer-Copyright {
-        font-size: var(--x-small-size);
+        font-size: var(--xs-small-size);
         font-weight: 500;
     }
 }

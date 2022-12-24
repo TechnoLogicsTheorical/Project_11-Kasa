@@ -4,10 +4,12 @@
 }
 
 .Profil-Name {
-    font-size: 18px;
-    width: 93px;
+    font-weight: inherit;
+    font-size: var(--x-small-size);
     text-align: right;
-    margin-right: 10px;
+
+    width: 93px;
+    margin: 0 15px 0 0;
 }
 
 .Profil-Avatar {

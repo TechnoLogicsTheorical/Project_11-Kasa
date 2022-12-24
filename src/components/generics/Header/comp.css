@@ -24,7 +24,7 @@
         height: 47px;
     }
     .Header-Link {
-        font-size: var(--x-small-size);
+        font-size: var(--xs-small-size);
         margin-left: 10px;
         text-transform: uppercase;
     }

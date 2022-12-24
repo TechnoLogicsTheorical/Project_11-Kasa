@@ -42,19 +42,21 @@ function Appartment() {
             <SlideShow datasPictures={datas && datas.pictures} />
 
             <div className='Appartment-Header'>
-                <Title
-                    title={ datas && datas.title }
-                    location={ datas && datas.location }
-                />
-                <Profil name={datas && datas.host.name} imageProfil={datas && datas.host.picture}/>
-            </div>
-
-            <div className="Appartment-Extra">
-                <div className='Tags-Container'>
-                    {datas && datas.tags.map( tag => <Tag key={tag} text={tag} />)}
+                <div className="Bloc-Informations-1">
+                    <Title
+                        title={ datas && datas.title }
+                        location={ datas && datas.location }
+                    />
+                    <div className='Tags-Container'>
+                        {datas && datas.tags.map( tag => <Tag key={tag} text={tag} />)}
+                    </div>
                 </div>
-
-                <RatingScore score={datas && datas.rating} />
+                <div className="Bloc-Informations-2">
+                    <div className="Appartment-Extra">
+                        <Profil name={datas && datas.host.name} imageProfil={datas && datas.host.picture}/>
+                        <RatingScore score={datas && datas.rating} />
+                    </div>
+                </div>
             </div>
 
             <div className="Appartment-Details">

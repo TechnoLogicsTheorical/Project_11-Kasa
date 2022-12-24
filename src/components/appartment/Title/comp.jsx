@@ -4,8 +4,8 @@ import React from "react";
 function Title({title, location}) {
     return (
         <div className='Title-Container'>
-            <h2 className='Title-Lvl1'>{title}</h2>
-            <h3 className='Title-Lvl2'>{location}</h3>
+            <h2 className='Title'>{title}</h2>
+            <h3 className='Sub-Title'>{location}</h3>
         </div>
     )
 }

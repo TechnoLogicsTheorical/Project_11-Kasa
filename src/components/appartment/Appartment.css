@@ -1,23 +1,26 @@
 .Appartment-Header {
-    display: flex;
-    justify-content: space-between;
-
     color: var(--main-color);
     margin-top: 30px;
 }
 
+.Appartment-Details,
+.Appartment-Header,
 .Appartment-Extra {
     display: flex;
+}
+
+.Appartment-Header,
+.Appartment-Extra {
     justify-content: space-between;
 }
 
-.Appartment-Extra .Tags-Container {
-    margin-top: 20px;
+.Appartment-Extra {
+    flex-direction: column;
 }
 
 .Appartment-Details {
     margin-top: 24px;
-    display: flex;
+
     gap: 76px;
     flex: none;
     flex-grow: 0;
@@ -26,4 +29,23 @@
 .Appartment-Details .Detail-Card {
     width: 50%;
     height: max-content;
+}
+
+@media screen and (max-width: 1120px) {
+    .Appartment-Details {
+        display: block;
+    }
+    .Appartment-Details .Detail-Card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Appartment-Header {
+        flex-direction: column;
+    }
+    .Appartment-Extra {
+        flex-direction: row-reverse;
+        margin-top: 16px;
+    }
 }

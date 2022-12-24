@@ -42,3 +42,15 @@
     z-index: -1;
     overflow: hidden;
 }
+
+@media screen and (max-width: 750px) {
+    .Button-Icon {
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .SlideShow-Container {
+        height: 225px;
+    }
+}

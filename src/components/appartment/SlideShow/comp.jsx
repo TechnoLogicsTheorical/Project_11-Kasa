@@ -49,11 +49,11 @@ function SlideShow({datasPictures}) {
 
             <div className='SlideShow-Controls'>
                 <button className='Button Prev'>
-                    <img onClick={showSlidePrev} src={ChevronGauche} alt="Icone de déplacement vers la Gauche" />
+                    <img className='Button-Icon' onClick={showSlidePrev} src={ChevronGauche} alt="Icone de déplacement vers la Gauche" />
                 </button>
 
                 <button className='Button Next'>
-                    <img onClick={showSlideNext} src={ChevronDroite} alt="Icone de déplacement vers la Droite" />
+                    <img className='Button-Icon' onClick={showSlideNext} src={ChevronDroite} alt="Icone de déplacement vers la Droite" />
                 </button>
 
                 <div className='SlideShow-Bullets'>
