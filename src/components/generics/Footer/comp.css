@@ -19,7 +19,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 750px) {
     .Footer {
         margin: 50px -20px -20px -20px;
     }

@@ -23,7 +23,7 @@ body {
     margin: 40px 100px 0 100px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 750px) {
     .App-Content {
         margin: 20px;
     }

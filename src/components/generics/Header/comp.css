@@ -18,10 +18,8 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 420px) {
-    .Header {
-        height: 47px;
-    }
+@media screen and (max-width: 750px) {
+    .Header,
     .Header-Logo {
         height: 47px;
     }

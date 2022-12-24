@@ -27,6 +27,18 @@
     color: white;
 }
 
+@media screen and (max-width: 980px) {
+    .Banner-Title {
+        font-size: var(--medium-size);
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .Banner-Title {
+        font-size: var(--small-size);
+    }
+}
+
 @media screen and (max-width: 420px) {
     .Banner {
         margin-top: 16px;
@@ -38,3 +50,4 @@
         left: 16px;
     }
 }
+
