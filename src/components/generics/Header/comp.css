@@ -28,5 +28,6 @@
     .Header-Link {
         font-size: var(--x-small-size);
         margin-left: 10px;
+        text-transform: uppercase;
     }
 }
