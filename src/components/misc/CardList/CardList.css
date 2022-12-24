@@ -12,3 +12,11 @@
     flex-grow: 0;
     gap: 50px 60px;
 }
+
+@media screen and (max-width: 420px) {
+    .Card-List-Container {
+        padding: 0;
+        background-color: unset;
+        margin: 22px 0 auto 0;
+    }
+}

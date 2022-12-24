@@ -2,11 +2,7 @@ import './comp.css'
 
 function Banner(props) {
     return (
-        <div className={'Banner '
-        && props.type === 'small' ?
-            'Banner Banner-Small' :
-            null
-        }>
+        <div className='Banner'>
             {props.children}
         </div>
     )
