@@ -6,15 +6,29 @@
 
     margin: 100px -100px 0 -100px;
     padding: 66px 0 30px 0;
-
 }
 
+
 .Footer-Logo {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .Footer-Copyright {
-    font-size: 24px;
+    font-size: var(--small-size);
     font-weight: 500;
     margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .Footer {
+        margin: 50px -20px -20px -20px;
+    }
+    .Footer-Logo {
+        height: 40px;
+        margin-bottom: 25px;
+    }
+    .Footer-Copyright {
+        font-size: var(--x-small-size);
+        font-weight: 500;
+    }
 }

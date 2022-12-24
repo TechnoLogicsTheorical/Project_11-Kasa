@@ -17,3 +17,16 @@
 .Header-Link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 420px) {
+    .Header {
+        height: 47px;
+    }
+    .Header-Logo {
+        height: 47px;
+    }
+    .Header-Link {
+        font-size: var(--x-small-size);
+        margin-left: 10px;
+    }
+}
