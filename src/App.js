@@ -4,15 +4,22 @@ import Appartment from "./pages/Appartment.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import About from "./pages/About.jsx";
 
+import Header from "./components/generics/Header/comp.jsx";
+import Footer from "./components/generics/Footer/comp.jsx";
+
 function App() {
   return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/appartment/:id" element={<Appartment />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+          <div className='App-Content'>
+              <Header />
+                  <Routes>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/appartment/:id" element={<Appartment />} />
+                      <Route path="/about" element={<About />} />
+                      <Route path="*" element={<PageNotFound />} />
+                  </Routes>
+              <Footer />
+          </div>
       </BrowserRouter>
   );
 }

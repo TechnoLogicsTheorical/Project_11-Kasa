@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import '../components/appartment/Appartment.css'
-import Header from '../components/generics/Header/comp.jsx';
-import Footer from '../components/generics/Footer/comp.jsx';
 
 import Detail from '../components/misc/Detail/comp.jsx';
 import RatingScore from '../components/appartment/RatingScore/comp.jsx';
@@ -33,12 +31,10 @@ function Appartment() {
             } else navigate('/error');
         }
         fetchData();
-    },[]);
+    },[id, navigate]);
 
     return (
-        <div className='App-Content'>
-            <Header />
-
+        <>
             <SlideShow datasPictures={datas && datas.pictures} />
 
             <div className='Appartment-Header'>
@@ -62,23 +58,19 @@ function Appartment() {
             <div className="Appartment-Details">
                 <Detail
                     title='Description'
-                    defaultOpen={true}
                 >
                     <p>{datas && datas.description}</p>
                 </Detail>
 
                 <Detail
                     title='Equipements'
-                    defaultOpen={true}
                 >
                     <ul>
                         {datas && datas.equipments.map( equipment => (<li className='List-Item' key={equipment}>{equipment}</li>))}
                     </ul>
                 </Detail>
             </div>
-
-            <Footer />
-        </div>
+        </>
     );
 }
 
