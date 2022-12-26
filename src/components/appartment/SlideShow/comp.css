@@ -30,17 +30,37 @@
     background: rgba(0, 0, 0, .8);
 }
 
-.SlideShow-Bullets {
+.SlideShow-Text-Indication {
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
+    color: white;
+    font-size: var(--small-size);
 }
 
 .SlideShow-Images {
     z-index: -1;
     overflow: hidden;
+}
+
+.SlideShow-Image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.SlideShow-Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SlideShow-Image.active {
+    display: block;
 }
 
 @media screen and (max-width: 750px) {
