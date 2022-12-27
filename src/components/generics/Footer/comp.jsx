@@ -1,5 +1,6 @@
-import './comp.css';
 import LogoWhite from '../../../assets/LogoWhite.png';
+import './comp.css';
+
 import React from 'react';
 
 /**
