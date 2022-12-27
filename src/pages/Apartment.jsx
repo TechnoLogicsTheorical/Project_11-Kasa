@@ -10,6 +10,11 @@ import Tag from '../components/appartment/Tag/comp.jsx';
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 
+/**
+ * Composant de page comportant les différents sous-composants ayant chacun ces caractéristiques et comportement
+ * @returns {JSX.Element} Renvoie un React Fragment pour renvoyer le contenu de la page demandée par l'utilisateur
+ * @constructor
+ */
 function Apartment() {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -37,7 +42,7 @@ function Apartment() {
         <>
             <SlideShow datasPictures={ datas.pictures } />
 
-            <div className='Appartment-Header'>
+            <div className='Apartment-Header'>
                 <div className="Bloc-Informations-1">
                     <Title
                         title={ datas.title }
@@ -48,14 +53,14 @@ function Apartment() {
                     </div>
                 </div>
                 <div className="Bloc-Informations-2">
-                    <div className="Appartment-Extra">
+                    <div className="Apartment-Extra">
                         <Profil name={ datas.host.name } imageProfil={ datas.host.picture }/>
                         <RatingScore score={ datas.rating } />
                     </div>
                 </div>
             </div>
 
-            <div className="Appartment-Details">
+            <div className="Apartment-Details">
                 <Detail title='Description'>
                     <p>{ datas.description }</p>
                 </Detail>

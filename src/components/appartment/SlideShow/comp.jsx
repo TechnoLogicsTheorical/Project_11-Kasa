@@ -12,6 +12,7 @@ import React, { useState } from "react";
  */
 function SlideShow({datasPictures: picturesPath}) {
 
+    // Nombre de slide, -1 pour pouvoir afficher le bon index calculé
     const totalNumberSlides = picturesPath.length - 1;
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -40,7 +41,9 @@ function SlideShow({datasPictures: picturesPath}) {
                 <img src={ picturesPath[currentSlide] } alt="Une image de l'appartement" />
             </div>
 
-            { (picturesPath.length > 1) ? (
+
+            { // Permet de pouvoir afficher les contrôles, seulement si-il existe plus de 1 image, sinon il n'y a aucun intérêt à les affichées
+                (picturesPath.length > 1) ? (
             <div className='SlideShow-Controls'>
                 <button className='Button Prev' onClick={ showSlidePrev }>
                     <img className='Button-Icon' src={ChevronGauche} alt="Icone de déplacement vers la Gauche" />

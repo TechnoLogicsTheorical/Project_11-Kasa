@@ -1,24 +1,24 @@
-.Appartment-Header {
+.Apartment-Header {
     color: var(--main-color);
     margin-top: 30px;
 }
 
-.Appartment-Details,
-.Appartment-Header,
-.Appartment-Extra {
+.Apartment-Details,
+.Apartment-Header,
+.Apartment-Extra {
     display: flex;
 }
 
-.Appartment-Header,
-.Appartment-Extra {
+.Apartment-Header,
+.Apartment-Extra {
     justify-content: space-between;
 }
 
-.Appartment-Extra {
+.Apartment-Extra {
     flex-direction: column;
 }
 
-.Appartment-Details {
+.Apartment-Details {
     margin-top: 24px;
 
     gap: 76px;
@@ -26,25 +26,25 @@
     flex-grow: 0;
 }
 
-.Appartment-Details .Detail-Card {
+.Apartment-Details .Detail-Card {
     width: 50%;
     height: max-content;
 }
 
 @media screen and (max-width: 1120px) {
-    .Appartment-Details {
+    .Apartment-Details {
         display: block;
     }
-    .Appartment-Details .Detail-Card {
+    .Apartment-Details .Detail-Card {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .Appartment-Header {
+    .Apartment-Header {
         flex-direction: column;
     }
-    .Appartment-Extra {
+    .Apartment-Extra {
         flex-direction: row-reverse;
         margin-top: 16px;
     }

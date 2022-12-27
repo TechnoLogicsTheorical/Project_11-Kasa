@@ -1,6 +1,12 @@
 import './star.css'
 import React from "react";
 
+/**
+ * Sous-composant de Rating Score qui permet de gérer ou non le rempissage de l'icone
+ * @param {boolean} filled Booléen permet de remplir une couleur ou non ...
+ * @returns {JSX.Element} Element Icon avec un enfant SVG
+ * @constructor
+ */
 function Star({filled = false}) {
     return (
         <div className='Star-Icon'>
