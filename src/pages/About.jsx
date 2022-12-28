@@ -1,13 +1,18 @@
-import React from 'react';
-
 import BannerImage from '../assets/BannerAbout.png';
 import Banner from "../components/misc/Banner/comp.jsx";
 import Detail from "../components/misc/Detail/comp.jsx";
 
+import React from 'react';
+
+/**
+ * Composant de page constituée des différents sous-composants de page, comme une bannière, image ...
+ * @returns {JSX.Element} Retourne un React Fragment
+ * @constructor
+ */
 function About() {
     return (
         <>
-            <Banner type='small'>
+            <Banner>
                 <img className='Banner-Image' src={BannerImage} alt="Paysage de plaine avec un fond Montagneux" />
             </Banner>
 

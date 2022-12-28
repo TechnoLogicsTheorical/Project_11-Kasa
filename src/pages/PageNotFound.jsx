@@ -1,7 +1,11 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import Header from "../components/generics/Header/comp.jsx";
+import { Link } from "react-router-dom";
 
+/**
+ * Composant de page visant à afficher la page d'erreur !
+ * @returns {JSX.Element} Retourne un React Fragment avec un conteneur Error-Reason-Content
+ * @constructor
+ */
 function PageNotFound() {
     return (
         <>
