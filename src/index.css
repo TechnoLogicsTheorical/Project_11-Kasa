@@ -24,12 +24,6 @@ body {
     margin: 40px 100px 0 100px;
 }
 
-@media screen and (max-width: 750px) {
-    .App-Content {
-        margin: 20px;
-    }
-}
-
 .Error-Reason-Content {
     display: flex;
     flex-direction: column;
@@ -57,6 +51,12 @@ body {
     color: inherit;
     font-size: 18px;
     margin-top: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .App-Content {
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width: 750px) {
