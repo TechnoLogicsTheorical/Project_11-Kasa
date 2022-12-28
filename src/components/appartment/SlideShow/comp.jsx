@@ -38,9 +38,8 @@ function SlideShow({datasPictures: picturesPath}) {
         <div className='SlideShow-Container'>
 
             <div className='SlideShow-Image active' >
-                <img src={ picturesPath[currentSlide] } alt="Une image de l'appartement" />
+                <img src={ picturesPath[currentSlide] } alt="Description d'un appartement" />
             </div>
-
 
             { // Permet de pouvoir afficher les contrôles, seulement si-il existe plus de 1 image, sinon il n'y a aucun intérêt à les affichées
                 (picturesPath.length > 1) ? (
