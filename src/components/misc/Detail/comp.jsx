@@ -2,6 +2,7 @@ import './comp.css'
 import Chevron from '../../../assets/Chevron.png';
 
 import React from 'react';
+import { useState } from 'react';
 
 /**
  * Composant d'affichage permettant de créer un élément des informations détaillées
@@ -11,10 +12,14 @@ import React from 'react';
  * @returns {JSX.Element} Retourne un élément HTML details contenant ses enfants
  * @constructor
  */
-function Detail({title, children: content, defaultOpen = false}) {
+function Detail({title, children: content}) {
+    const [opened, setOpened] = useState(false);
     return (
-        <details className='Detail-Card' open={defaultOpen}>
-            <summary className='Detail-Card-Title'>
+        <details className='Detail-Card' open={opened}>
+            <summary className='Detail-Card-Title' onClick={(event) => {
+                event.preventDefault();
+                setOpened(!opened);
+            }}>
                 {title}
                 <img className='Detail-Card-Icon' src={Chevron} alt="Icone pour définir l'état d'ouverture" />
             </summary>

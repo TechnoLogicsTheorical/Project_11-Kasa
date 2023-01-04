@@ -27,9 +27,6 @@ function CardList(props) {
             {datas && datas.map(data => (
                 <CardComp key={data.id} objectData={data} />
             ))}
-        {/*    (
-                <CardComp key={data.id} data={data.data} />
-            ))*/}
         </div>
     );
 }
