@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+import Header from '../components/generics/Header/comp.jsx';
+import Footer from '../components/generics/Footer/comp.jsx';
 
 /**
  * Composant de page visant à afficher la page d'erreur !
@@ -8,14 +11,16 @@ import { Link } from "react-router-dom";
  */
 function PageNotFound() {
     return (
-        <>
-            <div className='Error-Reason-Content'>
-                <h1 className='Error-Title'>404</h1>
-                <p className='Error-Text'>Oups! La page que vous demandez n'existe pas.</p>
+        <div className="App-Content">
+            <Header />
+            <div className="Error-Reason-Content">
+                <h1 className="Error-Title">404</h1>
+                <p className="Error-Text">Oups! La page que vous demandez n'existe pas.</p>
 
-                <Link className='Error-Link' to='/'>Retourner sur la page d’accueil</Link>
+                <Link className="Error-Link" to="/">Retourner sur la page d’accueil</Link>
             </div>
-        </>
+            <Footer />
+        </div>
     );
 }
 

@@ -14,31 +14,23 @@ import Root from './routes/Root.jsx'
 const router = createBrowserRouter([
     {
         path: '/',
-        element:
-            <Root>
-                <Home />
-            </Root>
-    },
-    {
-        path: '/apartment/:id',
-        element:
-            <Root>
-                <Apartment />
-            </Root>
-    },
-    {
-        path: '/about',
-        element:
-            <Root>
-                <About />
-            </Root>
-    },
-    {
-        path: '*',
-        element:
-            <Root>
-                <PageNotFound />
-            </Root>
+        element:<Root />,
+        errorElement: <PageNotFound />,
+        children: [
+            {
+                path: '/',
+                element: <Home />
+            },
+            {
+                path: '/apartment/:id',
+                element: <Apartment />
+            },
+            {
+                path: '/about',
+                element:
+                    <About />
+            }
+        ]
     }
 ]);
 
